@@ -32,7 +32,7 @@ class BaseConfig(object):
     FLASK_DEBUG = DEBUG or get_debug_flag()
     SSL_DISABLED = True
     BETTER_EXCEPTIONS = True
-    # SERVER_NAME = "tasq.ngrok.io"
+    # SERVER_NAME = "only fill this in if you're sure - because FLASK will return 404's if the hostname does not match this variable"
     BASE_URL = fromenv("BASE_URL")
     HOSTNAME = fromenv("HOSTNAME")
 

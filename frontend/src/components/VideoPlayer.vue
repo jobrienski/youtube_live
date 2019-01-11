@@ -116,7 +116,7 @@
           token: null,
           refreshToken: null
         }
-  const apiRoot = 'http://www.tasq.us/api/v1'
+  const apiRoot = 'http://localhost:5000/api/v1'
 
   export default {
     name: 'VideoPlayer',
@@ -236,7 +236,7 @@
         this.messages.push(this.user.name + ": " + message)
       },
       authenticate: function() {
-        window.location.href = 'http://www.tasq.us/api/v1/auth/login'
+        window.location.href = 'http://localhost:5000/api/v1/auth/login'
       },
       doLogout: function() {
         const vm = this
