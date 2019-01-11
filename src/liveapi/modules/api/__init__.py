@@ -23,7 +23,7 @@ api_v1 = Api(  # pylint: disable=invalid-name
         authorizations=authorizations,
         security='apikey',
         version='1.0',
-        title="StreamLabs Youtube Api",
+        title="Youtube Live Api",
         doc='/doc/',
         prefix=URL_PREFIX,
         description=

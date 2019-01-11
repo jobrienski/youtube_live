@@ -34,7 +34,7 @@ $ pip install -r requirements.txt
 ```
 - Running Backend
 
-cd src; FLASK_ENV=development python run_app.py
+cd src; FLASK_PORT=5000 FLASK_ENV=development python run_app.py
 
 - Gunicorn
 

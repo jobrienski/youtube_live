@@ -15,7 +15,7 @@ JWT_REFRESH_TOKEN_EXPIRES = timedelta(days=30)
 SECRET_KEY="super secretness"
 SSL_DISABLED=True
 SCHEME="http"
-GOOGLE_APP_ID="streamview-217620"
+GOOGLE_APP_ID="need-google-api"
 GOOGLE_API_KEY="sshhhh"
 GOOGLE_CLIENT_ID="shhhh"
 GOOGLE_CLIENT_SECRET="sshhhhh"

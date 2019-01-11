@@ -11,5 +11,6 @@ src/instance/*.py
 src/migrations/
 src/flask_session/*
 src/instance/*.py
+frontend/package-lock.json
 *.swap
 *.out

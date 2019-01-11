@@ -3,8 +3,8 @@ from flask.helpers import get_debug_flag
 from liveapi.util import fromenv
 
 # This is for the base REST url
-# blah.streamlabs.com/api/v1 or /api/v2 and then the REST url
-# blah.streamlabs.com/api/v1/users
+# blah.youtubelive_api.com/api/v1 or /api/v2 and then the REST url
+# blah.youtubelive_api.com/api/v1/users
 API_VERSION = "1"
 URL_PREFIX = f'/api/v{API_VERSION}'
 
@@ -32,7 +32,7 @@ class BaseConfig(object):
     FLASK_DEBUG = DEBUG or get_debug_flag()
     SSL_DISABLED = True
     BETTER_EXCEPTIONS = True
-    SERVER_NAME = "tasq.ngrok.io"
+    # SERVER_NAME = "tasq.ngrok.io"
     #BASE_URL = f"http://${SERVER_NAME}"
 
     ## Override these

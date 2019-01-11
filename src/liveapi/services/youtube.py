@@ -97,7 +97,7 @@ class YoutubeChatService:
         return result["items"][0]
 
 
-class YoutubeLivestreamService:
+class YoutubeLiveStreamService:
     @staticmethod
     def get_livestreams(developer_key, search_key="fortnite", max_results=10):
         youtube = GoogleResourceBuilder.build_youtube_readonly(developer_key)
