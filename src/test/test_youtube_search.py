@@ -1,7 +1,7 @@
 import unittest
 from liveapi.services.youtube import YoutubeLiveStreamService
 
-GOOGLE_API_KEY="AIzaSyDkMQxAyjEVAA_zFAWyV0dRz2VssOFhnpQ"
+GOOGLE_API_KEY="*************"
 
 class TestYoutubeSearch(unittest.TestCase):
     def test_search_live(self):
