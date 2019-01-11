@@ -1,7 +1,0 @@
-SQLALCHEMY_DATABASE_URI="postgresql://pguser:developer@db:5432/clapi"
-SECRET_KEY="jUOPDLIYwrBeiMn2pgfx0WdqMPV7f0lglxq4xo7Bbs9G1B67VY08gssH0PyihEeo"
-SSL_DISABLED="TRUE"
-FLASK_ENV="integration"
-FLASK_DEBUG="TRUE"
-ENVIRONMENT="integration"
-BETTER_EXCEPTIONS=1

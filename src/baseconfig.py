@@ -33,7 +33,8 @@ class BaseConfig(object):
     SSL_DISABLED = True
     BETTER_EXCEPTIONS = True
     # SERVER_NAME = "tasq.ngrok.io"
-    #BASE_URL = f"http://${SERVER_NAME}"
+    BASE_URL = fromenv("BASE_URL")
+    HOSTNAME = fromenv("HOSTNAME")
 
     ## Override these
     SQLALCHEMY_DATABASE_URI = None

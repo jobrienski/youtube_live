@@ -54,7 +54,7 @@ def api_login():
 def oauth2callback():
     '''
     Returns: json jwt access_token and refresh_token
-    TODO: move io-bound operations to celery
+    TODO: move io-bound operations to redis_queue
     '''
     saved_state = session['state']
     arg_state = request.args.get("state")
@@ -104,8 +104,8 @@ def oauth2callback():
         ret_json = {"access_token":jwt_access_token,"refresh_token":jwt_refresh_token}
         return jsonify(ret_json)
 
-    response = make_response(redirect("http://tasq.us/"))
-    response.set_cookie('access_token',jwt_access_token,expires=access_expires, domain="tasq.us")
+    response = make_response(redirect(app.config['BASE_URL']))
+    response.set_cookie('access_token',jwt_access_token,expires=access_expires, domain=app.config['HOSTNAME'])
     response.set_cookie('refresh_token',jwt_refresh_token,expires=refresh_expires)
 
     return response
