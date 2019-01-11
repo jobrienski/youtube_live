@@ -1,0 +1,3 @@
+# for IDE
+-r src/liveapi/requirements.txt
+-r src/test/requirements.txt

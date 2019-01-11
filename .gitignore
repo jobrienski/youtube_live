@@ -1,0 +1,15 @@
+venv/
+.idea/
+__pycache__/
+*.pyc
+.environment
+docker-compose.override.yml
+*.sqlite3
+src/instance/*.bak
+src/instance/*.py
+.pytest_cache/
+src/migrations/
+src/flask_session/*
+src/instance/*.py
+*.swap
+*.out
