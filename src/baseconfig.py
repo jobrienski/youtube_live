@@ -33,7 +33,7 @@ class BaseConfig(object):
     SSL_DISABLED = True
     BETTER_EXCEPTIONS = True
     # SERVER_NAME = "only fill this in if you're sure - because FLASK will return 404's if the hostname does not match this variable"
-    BASE_URL = fromenv("BASE_URL")
+    FRONT_END_BASE = fromenv("FRONT_END_BASE")
     HOSTNAME = fromenv("HOSTNAME")
 
     ## Override these
@@ -134,7 +134,7 @@ class BaseConfig(object):
 
     @classmethod
     def set_base_url(cls):
-        cls.BASE_URL = f"{cls.SCHEME}://{cls.SERVER_NAME}"
+        cls.FRONT_END_BASE = f"{cls.SCHEME}://{cls.SERVER_NAME}"
 
 
 class DevelopmentConfig(BaseConfig):
