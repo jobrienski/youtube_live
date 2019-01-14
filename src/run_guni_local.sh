@@ -1,8 +1,7 @@
 #!/bin/bash
 
-export FLASK_ENV="integration"
+export FLASK_ENV="development"
 export FLASK_APP=run_app.py 
-GUNICORN_COMMAND=/home/jobrien/.venv/bin/gunicorn
 
 ${GUNICORN_COMMAND:-"../venv/bin/gunicorn"} \
         -c ./gunicorn.cfg                   \
